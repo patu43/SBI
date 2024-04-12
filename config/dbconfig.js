@@ -5,7 +5,7 @@ const connectDB = async() =>{
     try{
 
         const db= process.env.DB_URL;
-       await mongoose.connect(process.env.DB_URL)
+       await mongoose.connect('mongodb://127.0.0.1:27017/SBI1')
         console.log("mongoDB connected successfully ....")
     }
     catch(err){
