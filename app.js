@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
 const session = require('express-session');
+const connectDB = require("./config/dbconfig")
 const twilio = require('twilio');
 const flash = require('connect-flash');
 const cors = require('cors');
@@ -20,6 +21,8 @@ app.use(express.json());
 app.use(flash({ sessionKeyName: 'flashMessage' }));
 
 app.use(cors());
+
+connectDB()
 
 
 // Twilio credentials
