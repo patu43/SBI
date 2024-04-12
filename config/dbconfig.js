@@ -5,7 +5,7 @@ const connectDB = async() =>{
     try{
 
         const db= process.env.DB_URL;
-       await mongoose.connect('mongodb://127.0.0.1:27017/SBI1')
+       await mongoose.connect('mongodb+srv://pratikpatil1311:athrav4388$@cluster0.2bvvrhg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
         console.log("mongoDB connected successfully ....")
     }
     catch(err){
