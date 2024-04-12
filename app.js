@@ -27,7 +27,7 @@ connectDB()
 
 // Twilio credentials
 const accountSid = 'AC3480b3fc14639411eae035a65de63c7d';
-const authToken = 'c6c04be930059b932d1de9ef72af0a6d';
+const authToken = '1c22f21571aa2bddc07297a87eddc1d4';
 const twilioPhone = '+12569528634';
 // const mobilenumber = '+918088379279';
 const client = twilio(accountSid, authToken);
