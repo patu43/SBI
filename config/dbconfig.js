@@ -1,19 +1,19 @@
-const mongoose=require('mongoose')
+// const mongoose=require('mongoose')
 
-const connectDB = async() =>{
+// const connectDB = async() =>{
 
-    try{
+//     try{
 
-        const db= process.env.DB_URL;
-       await mongoose.connect('mongodb://localhost:27017/SBI1')
-        console.log("mongoDB connected successfully ....")
-    }
-    catch(err){
-        console.log(err);
-        process.exit(1)
+//         const db= process.env.DB_URL;
+//        await mongoose.connect('mongodb://localhost:27017/SBI1')
+//         console.log("mongoDB connected successfully ....")
+//     }
+//     catch(err){
+//         console.log(err);
+//         process.exit(1)
 
  
-    }
+//     }
 
-}
-module.exports=connectDB;
+// }
+// module.exports=connectDB;
