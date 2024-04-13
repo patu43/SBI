@@ -9,9 +9,9 @@ const flash = require('connect-flash');
 const cors = require('cors');
 const app = express();
 require("dotenv").config();
-require("./config/dbconfig")();
+// require("./config/dbconfig")();
 // const newCustomer=require('./models/user');
-const Customer = require("./models/user");
+// const Customer = require("./models/user");
 const { toNamespacedPath } = require('path/win32');
 const port = 5000;
 
@@ -22,7 +22,7 @@ app.use(flash({ sessionKeyName: 'flashMessage' }));
 
 app.use(cors());
 
-connectDB()
+// connectDB()
 
 
 // Twilio credentials
